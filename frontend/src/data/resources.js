@@ -1,0 +1,147 @@
+// Sample Sri Lankan educational resources
+export const resources = [
+  {
+    id: 1,
+    title: "Advanced Level Mathematics Complete Guide",
+    description: "Comprehensive guide covering all A/L Mathematics topics including calculus, algebra, and pure mathematics. Perfect for exam preparation.",
+    subject: "Mathematics",
+    level: "A/L",
+    language: "English",
+    type: "Textbook",
+    provider: "Sri Lanka Institute of Education",
+    url: "https://example.com/al-math-guide",
+    tags: ["Mathematics", "A/L", "Exam Prep", "Calculus"]
+  },
+  {
+    id: 2,
+    title: "O/L Science Simplified - Physics & Chemistry",
+    description: "Easy-to-understand explanations of O/L Physics and Chemistry concepts with real-world examples relevant to Sri Lankan context.",
+    subject: "Science",
+    level: "O/L",
+    language: "English",
+    type: "Interactive Course",
+    provider: "EduHub Sri Lanka",
+    url: "https://example.com/ol-science",
+    tags: ["Science", "O/L", "Physics", "Chemistry"]
+  },
+  {
+    id: 3,
+    title: "සිංහල භාෂාව - ශ්‍රේණිය 11 හා 12",
+    description: "A/L Sinhala literature and grammar comprehensive course with past papers and solutions. Includes classical and modern texts.",
+    subject: "Language Arts",
+    level: "A/L",
+    language: "Sinhala",
+    type: "Textbook",
+    provider: "National Institute of Language",
+    url: "https://example.com/sinhala-al",
+    tags: ["Sinhala", "A/L", "Literature", "Grammar"]
+  },
+  {
+    id: 4,
+    title: "English Literature - Shakespeare to Modern",
+    description: "O/L and A/L English literature course covering Shakespeare, poetry, and contemporary works. Essay writing tips included.",
+    subject: "Language Arts",
+    level: "O/L",
+    language: "English",
+    type: "Video Course",
+    provider: "British Council Sri Lanka",
+    url: "https://example.com/english-lit",
+    tags: ["English", "O/L", "Literature", "Writing"]
+  },
+  {
+    id: 5,
+    title: "University Entrance Exam (UEE) Physics Mastery",
+    description: "Intensive physics preparation course for university entrance exams with worked solutions and practice tests.",
+    subject: "Science",
+    level: "University",
+    language: "English",
+    type: "Interactive Course",
+    provider: "University Education Centre",
+    url: "https://example.com/uee-physics",
+    tags: ["Physics", "University", "Entrance Exam"]
+  },
+  {
+    id: 6,
+    title: "தமிழ் மொழி - O/L கதை மற்றும் கவிதை",
+    description: "Tamil language course for O/L students focusing on prose, poetry, and grammar with cultural context from Sri Lanka.",
+    subject: "Language Arts",
+    level: "O/L",
+    language: "Tamil",
+    type: "Textbook",
+    provider: "Tamil Education Board",
+    url: "https://example.com/tamil-ol",
+    tags: ["Tamil", "O/L", "Language", "Literature"]
+  },
+  {
+    id: 7,
+    title: "History of Sri Lanka - From Ancient to Modern",
+    description: "Comprehensive history course covering Sri Lankan history from ancient kingdoms to present day. Includes chronologies and maps.",
+    subject: "Social Studies",
+    level: "O/L",
+    language: "English",
+    type: "Interactive Course",
+    provider: "History Institute of Sri Lanka",
+    url: "https://example.com/sri-lanka-history",
+    tags: ["History", "O/L", "Sri Lanka", "Social Studies"]
+  },
+  {
+    id: 8,
+    title: "A/L Biology - Organisms and Ecosystems",
+    description: "Advanced biology course covering cell biology, genetics, ecology, and evolution. Perfect for medical entrance preparation.",
+    subject: "Science",
+    level: "A/L",
+    language: "English",
+    type: "Video Course",
+    provider: "Sri Lanka Medical Academy",
+    url: "https://example.com/al-biology",
+    tags: ["Biology", "A/L", "Medical Prep", "Science"]
+  },
+  {
+    id: 9,
+    title: "Economics Fundamentals - O/L to University",
+    description: "Economics course from O/L basics to university-level concepts. Includes Sri Lankan economic examples and case studies.",
+    subject: "Social Studies",
+    level: "O/L",
+    language: "English",
+    type: "Interactive Course",
+    provider: "Economic Research Institute",
+    url: "https://example.com/economics",
+    tags: ["Economics", "O/L", "Business", "Social Studies"]
+  },
+  {
+    id: 10,
+    title: "A/L Combined Mathematics Problem Solving",
+    description: "Intensive problem-solving course for A/L Mathematics with thousands of practice problems and detailed solutions.",
+    subject: "Mathematics",
+    level: "A/L",
+    language: "English",
+    type: "Practice Problems",
+    provider: "Math Excellence Centre",
+    url: "https://example.com/al-math-problems",
+    tags: ["Mathematics", "A/L", "Problem Solving"]
+  },
+  {
+    id: 11,
+    title: "Computer Science Basics - O/L Programming",
+    description: "Introduction to programming and computer science concepts for O/L students. Includes practical coding exercises.",
+    subject: "Technology",
+    level: "O/L",
+    language: "English",
+    type: "Interactive Course",
+    provider: "Code Academy Sri Lanka",
+    url: "https://example.com/cs-ol",
+    tags: ["Technology", "O/L", "Programming", "Computer Science"]
+  },
+  {
+    id: 12,
+    title: "Civic Education & Good Governance",
+    description: "O/L Civic education course covering citizenship, rights, and responsibilities in Sri Lankan democracy.",
+    subject: "Social Studies",
+    level: "O/L",
+    language: "English",
+    type: "Textbook",
+    provider: "Civic Institute",
+    url: "https://example.com/civic-ed",
+    tags: ["Civic Education", "O/L", "Social Studies", "Governance"]
+  }
+];

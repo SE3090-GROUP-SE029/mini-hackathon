@@ -1,0 +1,146 @@
+.resource-details {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 32px 40px 48px;
+  flex-grow: 1;
+}
+
+.resource-details--missing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.resource-details__back-link,
+.resource-details__back {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.resource-details__back-link:hover,
+.resource-details__back:hover {
+  text-decoration: underline;
+}
+
+.resource-details__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.resource-details__header h1 {
+  margin: 16px 0;
+  font-size: 40px;
+  line-height: 118%;
+}
+
+.resource-details__description {
+  max-width: 46rem;
+  margin-bottom: 28px;
+}
+
+.resource-details__meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 20px;
+  margin: 0 0 28px;
+}
+
+.resource-details__meta div {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--social-bg);
+}
+
+.resource-details__meta dt {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.resource-details__meta dd {
+  margin: 0;
+  color: var(--text-h);
+  overflow-wrap: anywhere;
+}
+
+.resource-details__meta a {
+  color: var(--accent);
+}
+
+.resource-details__tags h2 {
+  margin-bottom: 12px;
+}
+
+.resource-details__tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resource-details__tags li {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-size: 14px;
+}
+
+.resource-details__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.resource-details__actions .counter {
+  text-decoration: none;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .resource-details {
+    padding: 24px 20px 40px;
+  }
+
+  .resource-details__header h1 {
+    font-size: 32px;
+  }
+
+  .resource-details__meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .resource-details {
+    padding: 20px 16px 32px;
+  }
+
+  .resource-details__header {
+    flex-direction: column;
+  }
+
+  .resource-details__header h1 {
+    font-size: 28px;
+    margin: 12px 0 0;
+  }
+
+  .resource-details__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-details__actions .counter {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}

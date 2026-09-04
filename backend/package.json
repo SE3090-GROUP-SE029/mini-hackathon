@@ -1,13 +1,22 @@
 {
-  "name": "backend",
+  "name": "edulanka-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "EduLanka API — Sri Lankan education resource catalogue",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/scripts/seedResources.js"
   },
-  "keywords": [],
+  "keywords": ["edulanka", "education", "sri-lanka"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "mongoose": "^8.24.4",
+    "multer": "^2.3.0"
+  }
 }

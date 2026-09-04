@@ -1,0 +1,182 @@
+.hero {
+  padding: 3rem 0 2.5rem;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(212, 160, 23, 0.28), transparent 28%),
+    linear-gradient(180deg, #efe6d2 0%, var(--paper) 100%);
+}
+
+.hero-grid,
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.hero-panel {
+  position: relative;
+  min-height: 320px;
+}
+
+.floating-card {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(215, 203, 179, 0.8);
+  max-width: 280px;
+}
+
+.floating-card span,
+.floating-card small {
+  display: block;
+  color: var(--ink-soft);
+}
+
+.floating-card strong {
+  display: block;
+  margin: 0.35rem 0;
+}
+
+.floating-card-two {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  transform: rotate(3deg);
+}
+
+.floating-card-three {
+  position: absolute;
+  left: 24px;
+  bottom: 12px;
+  transform: rotate(-3deg);
+  background: var(--teal);
+  color: white;
+}
+
+.floating-card-three span,
+.floating-card-three small,
+.floating-card-three strong {
+  color: white;
+}
+
+.problem-section,
+.solution-section,
+.impact-section {
+  padding: 2.5rem 0;
+}
+
+.problem-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-list li {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0 14px 14px 0;
+}
+
+.section-intro {
+  max-width: 46rem;
+}
+
+.benefit-grid,
+.impact-grid,
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.benefit-card,
+.impact-grid article {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.benefit-card:hover,
+.impact-grid article:hover,
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.impact-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1.5rem;
+}
+
+.stats-section {
+  padding: 0.5rem 0 2.5rem;
+}
+
+.stats-grid article {
+  background: var(--teal);
+  color: white;
+  border-radius: var(--radius);
+  padding: 1.3rem;
+}
+
+.stats-grid p {
+  color: #dceeea;
+  margin: 0;
+}
+
+.stat-value {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.35rem;
+}
+
+.cta-band {
+  background: var(--maroon);
+  color: white;
+  padding: 2rem 0;
+}
+
+.cta-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cta-band h2,
+.cta-band p {
+  color: white;
+}
+
+.cta-band .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .split,
+  .cta-inner,
+  .benefit-grid,
+  .impact-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    min-height: 280px;
+  }
+}

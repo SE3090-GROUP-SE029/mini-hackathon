@@ -1,0 +1,158 @@
+.recommend-form,
+.results-panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field small {
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.field-error {
+  color: var(--maroon);
+  font-size: 0.88rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.field [aria-invalid='true'] {
+  border-color: var(--maroon);
+  background: #fff6f6;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.plan-grid div {
+  background: var(--paper);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+
+.plan-grid dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.plan-grid dd {
+  margin: 0.2rem 0 0;
+  font-weight: 800;
+}
+
+.plan-focus {
+  background: rgba(212, 160, 23, 0.16);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.form-banner {
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.form-banner-error {
+  background: #fff6f6;
+  color: var(--maroon);
+}
+
+.form-banner-success {
+  background: rgba(11, 95, 84, 0.12);
+  color: var(--teal-dark);
+}
+
+.upload-box {
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--paper);
+}
+
+.upload-box.has-error {
+  border-color: var(--maroon);
+  background: #fff6f6;
+}
+
+.upload-empty {
+  margin: 0.4rem 0 0;
+}
+
+.file-preview {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.file-preview p {
+  margin: 0.2rem 0 0;
+}
+
+.file-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.upload-progress {
+  margin-top: 0.9rem;
+}
+
+.progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--paper-deep);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--teal);
+  transition: width 0.2s ease;
+}
+
+@media (max-width: 800px) {
+  .form-grid,
+  .plan-grid,
+  .results-header {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .file-preview,
+  .file-preview-actions,
+  .page-header-split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

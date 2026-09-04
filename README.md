@@ -57,9 +57,3 @@ Vite proxies `/api` to the backend during development.
 | `/recommendations` | Recommendation form and ranked results |
 | `/about` | Impact and benefits |
 
-## Recommendation scoring
-
-- Subject match: +40
-- Education level match: +30
-- Language match: +20
-- Matching tags: +10
